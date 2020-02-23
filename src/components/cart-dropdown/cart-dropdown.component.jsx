@@ -18,7 +18,7 @@ const CartDropdown = ({ cartItems, history, toggleCart }) => (
           <CartItem key={cartItem.id} item={cartItem} />
         ))
       ) : (
-        <div>No Items Inside the cart</div>
+        <h3>No Items Inside the cart..!!</h3>
       )}
     </div>
     <CustomButton
@@ -31,9 +31,6 @@ const CartDropdown = ({ cartItems, history, toggleCart }) => (
     </CustomButton>
   </div>
 );
-// const mapStateToProps = ({ cart: { cartItems } }) => ({
-//   cartItems
-// });
 const mapStateToProps = createStructuredSelector({
   cartItems: cartItemsSelector
 });

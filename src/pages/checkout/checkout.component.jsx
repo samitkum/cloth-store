@@ -31,7 +31,7 @@ const Checkout = ({ cartItems, TotalPrice }) => {
       {cartItems.length ? (
         cartItems.map(Item => <CheckoutItems key={Item.id} Item={Item} />)
       ) : (
-        <div>No Items inside the cart</div>
+        <h3>No Items inside the cart..!!</h3>
       )}
 
       <div className="total">Total Amount : ${TotalPrice}</div>
